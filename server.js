@@ -32,7 +32,7 @@ app.use(helmet({
 app.use(cookieParser());
 
 app.use(cors({ 
-  origin:"https://akaki-frontend.onrender.com"
+  origin:"https://akaki-frontend.onrender.com",
   credentials: true,
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"]
