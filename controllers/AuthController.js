@@ -73,12 +73,12 @@ export const login = async (req, res) => {
       { expiresIn: "1d" }
     );
 
-    res.cookie("token", token, {
-      httpOnly: true,
-      secure: process.env.NODE_ENV === "production",
-      sameSite: "lax",
-      maxAge: 24 * 60 * 60 * 1000
-    });
+  res.cookie("token", token, {
+  httpOnly: true,
+  secure: true,    // 👈 ለ HTTPS (Render) የግድ ያስፈልጋል
+  sameSite: "none", // 👈 ለተለያዩ Domain ግንኙነት የግድ ያስፈልጋል
+  maxAge: 24 * 60 * 60 * 1000
+});
 
     return res.status(200).json({
       success: true,
