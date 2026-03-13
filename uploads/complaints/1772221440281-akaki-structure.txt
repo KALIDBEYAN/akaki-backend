@@ -1,0 +1,69 @@
+akaki-woreda-system/
+├── backend/
+│   ├── config/
+│   │   └── db.js (የዳታቤዝ ግንኙነት)
+│   ├── models/
+│   │   ├── BlockedUser.js
+│   │   ├── User.js (የተጠቃሚዎች ሞዴል)
+│   │   ├── File.js (የፋይሎች ሞዴል)
+│   │   └── Complaint.js (የቅሬታዎች ሞዴል)
+│   ├── routes/
+│   │   ├── AuthnRoutes.js (ለምዝገባና ለመግቢያ)
+│   │   ├── FileRoutes.js (ለፋይል አስተዳደር)
+│   │   ├── ComplaintRoutes.js (ለቅሬታዎች)
+│   │   └── ManagerRoutes.js (ለኃላፊው ልዩ ተግባራት)
+│   ├── controllers/
+│   │   ├── AuthController.js
+│   │   ├── FileController.js
+│   │   ├── ComplaintController.js
+│   │   └── ManagerController.js
+│   ├── middleware/
+│   │   └── authMiddleware.js (የደህንነት ፍቃድ - protect)
+│   ├── .env (የMONGO_URL እና PORT መያዣ)
+│   ├── package.json
+│   └── server.js (ዋናው መነሻ ፋይል)
+│
+├── frontend/
+│   ├── public/
+│   │   └── favicon.ico
+│   ├── src/
+│   │   ├── image/ (ለፎቶዎችና ለዲዛይን)
+│   │   │   └── civil.png
+│   │   ├── components/
+│   │   │   ├── Navbar/
+│   │   │   │   ├── Navbar.js
+│   │   │   │   └── Navbar.css
+│   │   │   ├── RegisterForm/
+│   │   │   │   ├── RegisterForm.js
+│   │   │   │   └── RegisterForm.css
+│   │   │   ├── AdminPanel/
+│   │   │   │   └── AdminPanel.js
+│   │   │   │   └── AdminPanel.css
+│   │   │   ├── ExpertPanel/
+│   │   │   │   └── ExpertPanel.js
+│   │   │   │   └── ExpertPanel.css
+│   │   │   ├── ManagerPanel/
+│   │   │   │   └── ManagerPanel.js
+│   │   │   │   └── ManagerPanel.css
+│   │   │   ├── ComplaintForm/
+│   │   │   │   └── ComplaintForm.js
+│   │   │   │   └── ManagerPanel.css
+│   │   │   ├── StatusViewer/
+│   │   │   │   └── StatusViewer.js
+│   │   │   │   └── StatusViewer.css
+│   │   │   ├── ServicePage/
+│   │   │   │   └── ServicePage.js
+│   │   │   │   └── ServicePage.css
+│   │   │   └── LogIn/
+│   │   │       └── LogIn.js
+│   │   │       └── LogIn.css
+│   │   ├── App.js (ዋናው የራውቲንግ እና የሎጂክ ፋይል)
+│   │      ├── Api
+│   │   │     └── axios.js
+│   │   ├── index.js (ወይም main.jsx)
+│   │   └── App.css (አጠቃላይ ስታይል)
+│   ├── .env (የAPI_BASE_URL መያዣ)
+│   ├── package.json
+│   └── vite.config.js (ወይም webpack config)
+│
+└── README.md
