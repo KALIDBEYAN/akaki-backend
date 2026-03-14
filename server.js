@@ -32,7 +32,7 @@ app.use(helmet({
 app.use(cookieParser());
 
 app.use(cors({ 
-  origin:"https://akaki-frontend.onrender.com",
+  origin:"akaki-frontend.vercel.app",
   credentials: true,
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"]
